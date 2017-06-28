@@ -1,0 +1,44 @@
+body > section > div.auth 
+{
+	header
+	{
+		@import (multiple) "./vars/colors.less";
+		margin-top: 20px;	
+		width: 100%;
+		height: 40px;
+		button
+		{
+			font-size: 18px;
+			color: white;
+			width: 200px;
+			height: 40px;
+			border: none;
+			cursor: pointer;
+		}
+		div.button
+		{
+			font-size: 18px;
+			color: white;
+			width: 199px;
+			height: 40px;
+			display: inline-block;
+			background-color: lighten(@clr-main, 10%);
+			cursor: default;
+			vertical-align: top;
+			text-align: center;
+			line-height: 40px;
+			border-left: 1px solid white;
+			//margin-top: 100px;
+			//border: 1px solid black;
+		}
+		button.active
+		{
+			background-color: lighten(@clr-main, 10%);
+			cursor: default;
+		}
+		button.non-active
+		{
+			background-color: @clr-main;
+		}
+	}
+}

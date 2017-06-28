@@ -1,0 +1,46 @@
+body > section > div.auth
+{
+    @import (multiple) "./vars/colors.less";
+	padding-right: 0;
+	div.menu-auth
+    {
+		display: inline-block;
+		width: 400px;
+		font: 18px;
+		color: white;
+		height: 40px;
+		margin-top: 0;
+		background-color: lighten(@clr-main, 10%);
+		span
+		{
+			display: inline-block;
+			width: 230px;
+			height: 40px;
+			margin: 0;
+			padding-left: 50px;
+		}
+		button 
+		{ 
+			color: @clr-comp;
+			background-color: @clr-btn;
+			width: 100px;
+			margin-left: 20px;
+			border: none;
+			cursor: pointer;	
+			text-align: center;
+			height: 40px;
+		}
+	}
+	button.sign-in
+	{
+		width: 200px;
+		height: 40px;
+		color: @clr-comp;
+		background-color: @clr-btn;	
+		border: none;
+		cursor: pointer;	
+		text-align: center;
+		margin-left: 100px;
+		margin-top: 100px;
+	}
+}
