@@ -30,12 +30,12 @@ class Auth extends SubscribedComponent<State, AuthProps, AuthState>
 	public render( _props: AuthProps, {user}: AuthState ): JSX.Element
 	{
 		return (
-			<div class="auth">
+			<div /*class="auth"*/>
 				{
 					user
 					? [
 						(
-							<div 	class="menu-auth">
+							<div class="menu-auth">
 								<span className="name">
 									User: {user.displayName}
 								</span>

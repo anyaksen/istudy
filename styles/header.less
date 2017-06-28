@@ -1,4 +1,4 @@
-body > section > div.auth 
+body > section > div
 {
 	header
 	{
@@ -22,23 +22,21 @@ body > section > div.auth
 			width: 199px;
 			height: 40px;
 			display: inline-block;
-			background-color: lighten(@clr-main, 10%);
+			background-color: @clr-main;
 			cursor: default;
 			vertical-align: top;
 			text-align: center;
 			line-height: 40px;
 			border-left: 1px solid white;
-			//margin-top: 100px;
-			//border: 1px solid black;
 		}
 		button.active
 		{
-			background-color: lighten(@clr-main, 10%);
+			background-color: @clr-main;
 			cursor: default;
 		}
 		button.non-active
 		{
-			background-color: @clr-main;
+			background-color: lighten(@clr-main, 10%);
 		}
 	}
 }
